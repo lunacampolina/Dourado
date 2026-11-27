@@ -1,0 +1,14 @@
+{
+  "name": "@salas/api",
+  "private": true,
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@salas/tipos": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

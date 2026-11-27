@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+backup-banco-*/
+docs/evidencias-novas/
+docs/evidencias-atualizadas.md

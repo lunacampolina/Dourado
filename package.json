@@ -1,0 +1,16 @@
+{
+  "name": "salas-estudo",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:api": "bun --watch apps/api/src/index.ts",
+    "dev:web": "bun run --cwd=apps/web dev",
+    "dev": "concurrently -n API,WEB -c magenta,cyan \"bun run dev:api\" \"bun run dev:web\"",
+    "typecheck": "bun run --cwd=apps/api typecheck && bun run --cwd=apps/web typecheck",
+    "test:api": "bun run scripts/testar-api.ts"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "typescript": "^5.7.0"
+  }
+}
